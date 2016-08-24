@@ -4,9 +4,9 @@
 try {
   Package.describe({
     name: 'formly:angular-formly-templates-bootstrap',
-    summary: '(official): Bootstrap templates for angular-formly',
+    summary: '(official): Bootstrap templates for angular-formly btwlabs version',
     version: '0.0.0-semantically-released.0',
-    git: 'https://github.com/formly-js/angular-formly-templates-bootstrap.git',
+    git: 'https://github.com/btwlabs/angular-formly-templates-bootstrap.git',
   })
 
   Package.onUse(function(api) {
