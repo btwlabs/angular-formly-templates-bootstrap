@@ -3,7 +3,7 @@
 
 try {
   Package.describe({
-    name: 'formly:angular-formly-templates-bootstrap',
+    name: 'formly:angular-formly-templates-bootstrap-btwlabs',
     summary: '(official): Bootstrap templates for angular-formly btwlabs version',
     version: '0.0.0-semantically-released.0',
     git: 'https://github.com/btwlabs/angular-formly-templates-bootstrap.git',
@@ -24,7 +24,7 @@ try {
     api.use('twbs:bootstrap@3.3.2')
     api.imply('twbs:bootstrap')
     // export file
-    api.addFiles('dist/angular-formly-templates-bootstrap.js', 'client')
+    api.addFiles('dist/angular-formly-templates-bootstrap-btwlabs.js', 'client')
   })
 } catch (e) {
   //
