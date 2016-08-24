@@ -1,5 +1,5 @@
 {
-  "name": "angular-formly-templates-bootstrap",
+  "name": "angular-formly-templates-bootstrap-btwlabs",
   "authors": [
     "Astrism <astrisms@gmail.com>"
   ],
@@ -7,8 +7,8 @@
     "Astrism <astrisms@gmail.com>",
     "Kent C. Dodds <kent@doddsfamily.us>"
   ],
-  "main": "./dist/angular-formly-templates-bootstrap.js",
-  "description": "Angular-Formly plugin which outputs bootstrap compatible form fields.",
+  "main": "./dist/angular-formly-templates-bootstrap-btwlabs.js",
+  "description": "Angular-Formly plugin which outputs bootstrap compatible form fields. Patched by btwlabs.",
   "keywords": [
     "AngularJs",
     "form",
