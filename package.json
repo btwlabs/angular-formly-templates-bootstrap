@@ -9,7 +9,7 @@
   "homepage": "http://formly-js.github.io/angular-formly-templates-bootstrap/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/formly-js/angular-formly-templates-bootstrap.git"
+    "url": "https://github.com/btwlabs/angular-formly-templates-bootstrap.git"
   },
   "main": "dist/angular-formly-templates-bootstrap.js",
   "licenses": [
