@@ -307,7 +307,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          checkValidity(true);
 
 	          if ($scope.to.onChange) {
-	            $scope.to.onChange();
+	            $scope.to.onChange($scope.model[opts.key], opts);
 	          }
 	        }
 
