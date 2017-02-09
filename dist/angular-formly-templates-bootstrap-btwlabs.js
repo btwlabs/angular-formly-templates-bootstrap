@@ -155,7 +155,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <label for=\"{{id}}\" class=\"control-label {{to.labelSrOnly ? 'sr-only' : ''}}\" ng-if=\"to.label\">\n    {{to.label}}\n    {{to.required ? '*' : ''}}\n  </label>\n  <formly-transclude></formly-transclude>\n</div>\n"
+	module.exports = "<div>\n  <label for=\"{{id}}\" class=\"control-label {{to.labelSrOnly ? 'sr-only' : ''}}\" ng-if=\"to.label\">\n    {{to.label}}\n    {{to.required ? '*' : ''}}\n  </label>\n  <div class=\"field-input-wrapper\">\n    <formly-transclude></formly-transclude>\n  </div>\n</div>\n"
 
 /***/ },
 /* 8 */
@@ -588,7 +588,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    formlyConfig.templateManipulators.preWrapper.push(function ariaDescribedBy(template, options, scope) {
 	      if (angular.isDefined(options.templateOptions.description)) {
 	        var el = document.createElement('div');
-	        el.appendChild(angular.element('<p id="' + scope.id + '_description"' + 'class="help-block"' + 'ng-if="to.description">' + '{{to.description}}' + '</p>')[0]);
+	        var wrap = el.appendChild(angular.element('<div class="field-input-wrapper"></div>')[0]);
+	        wrap.appendChild(angular.element('<p id="' + scope.id + '_description"' + 'class="help-block"' + 'ng-if="to.description">' + '{{to.description}}' + '</p>')[0]);
 	        el.appendChild(angular.element(template)[0]);
 	        var modelEls = angular.element(el.querySelectorAll('[ng-model]'));
 	        if (modelEls) {
